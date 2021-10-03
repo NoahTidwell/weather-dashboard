@@ -1,0 +1,10 @@
+* {
+    margin: 0;
+    padding: 0;
+    display: border-box;
+}
+
+h2 {
+    font-family: monospace;
+}
+
