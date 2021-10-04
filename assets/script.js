@@ -1,3 +1,6 @@
+
+var todayDate = moment().format("MMMM Do YYYY, h:mm:ss a");
+$("#currentDay").text(todayDate);
 // Global Variables
 var cityInput = document.getElementById("cityInput");
 var searchBtn = document.querySelector("button");
@@ -27,7 +30,7 @@ var displayCity = function () {
     .then(function(data) {
         // clear previous info
         clearInfo();
-        
+
         // City Name Display
         var cityName = data.name;
         cityName.classList = "text-center"
