@@ -20,12 +20,14 @@ var displayCity = function () {
         displayHumid.innerHTML = "";
         weatherDescription.innerHTML = "";
     }
-    
+
     // Fetch API DATA
     fetch("https://api.openweathermap.org/data/2.5/weather?q=" + cityInputText + "&APPID=b30096dc99b5b0d5c4edfccb15cd2965")
     .then(response => response.json())
     .then(function(data) {
+        // clear previous info
         clearInfo();
+        
         // City Name Display
         var cityName = data.name;
         cityName.classList = "text-center"
