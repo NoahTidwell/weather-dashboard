@@ -4,7 +4,18 @@
     display: border-box;
 }
 
-h2 {
-    font-family: monospace;
+header {
+    background-color: cyan;
 }
 
+h2 {
+    font-family: monospace;
+    color: darkblue;
+    text-align: center;
+}
+
+h3 {
+    font-size: 18px;
+    font-family: monospace;
+    color: darkblue;
+}

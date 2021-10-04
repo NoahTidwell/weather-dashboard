@@ -15,27 +15,35 @@
         <h2>Weather Dashboard Application</h2>
     </header>
     <main>
+        <section>
         <div class="row col-12">
             <div class="col-3 flex-column">
-                <!-- Search Card Input and Submit Button -->
-                <div class="card-body">
-                    <form class="form-group" id="cityForm">
-                        <label for="cityInput" id="cityLabel" class="card-title"><h3>Search for a City:</h3></label>
-                        <input type="text" class="form-control" name="cityInput" id="cityInput" placeholder="Search a City" />
-                        <br />
-                        <button type="button" class="btn btn-primary form-control">Search</button>
-                    </form>
-                </div>
+            <!-- Search Card Input and Button -->
+            <div class="card-body">
+                <form class="form-group" id="cityForm">
+                    <label for="cityInput" id="cityLabel" class="card-title"><h3>Search for a City:</h3></label>
+                    <input type="text" class="form-control" name="cityInput" id="cityInput" placeholder="Search a City" />
+                    <br />
+                    <button type="button" class="btn btn-success form-control">Search</button>
+                </form>
             </div>
         </div>
+        </div>
+        </section>
         <!-- Display Searched Cities -->
         <div class="col-3 d-flex flex-column border-top border-2 border-dark" id="previous-searches">
             <ul id="displaySearch">
-                
+
             </ul>
         </div>
+        
     </main>
-
+    <div class="row">
+        <div class="col-12">
+            <h2 id="citySearch"></h2>
+            <p id="currentTemp" class="text-center"></p>
+        </div>
+    </div>
 </div>
 
     <script src="./assets/script.js"></script>
